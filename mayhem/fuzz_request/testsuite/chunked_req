@@ -1,0 +1,15 @@
+POST /proxy/e HTTP/1.1
+Host: example.com
+Transfer-Encoding: chunked
+
+4
+wxyz
+0
+
+
+UP
+HTTP/1.1 200 OK
+Content-Length: 5
+Content-Type: text/plain
+
+hello

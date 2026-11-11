@@ -1,0 +1,8 @@
+GET /proxy/d HTTP/1.1
+Host: example.com
+
+
+UP
+HTTP/1.1 500 Internal Server Error
+Content-Length: 0
+

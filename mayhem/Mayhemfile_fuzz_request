@@ -1,0 +1,10 @@
+project: savantenvs/nginx-module-vts
+target: fuzz_request
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fuzz_request/testsuite
+cmds:
+  - cmd: /mayhem/fuzz_request
+    libfuzzer: true
+    timeout: 30
+    dictionary: /mayhem/mayhem/fuzz_request/fuzz_request.dict

@@ -1,0 +1,3 @@
+GET /status/control?cmd=status&group=server&zone=* HTTP/1.1
+Host: example.com
+

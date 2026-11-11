@@ -1,0 +1,3 @@
+GET /status/control?cmd=delete&group=server&zone=example.com HTTP/1.1
+Host: example.com
+
